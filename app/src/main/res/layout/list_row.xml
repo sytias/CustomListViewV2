@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/thumnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:background="#ffeeeade"
+        >
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:icon="@mipmap/ic_launcher"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quinn's Book"
+        android:textColor="#040404"
+        android:layout_toRightOf="@+id/thumnail"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/author"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/thumnail"
+        android:text="Yingchu"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="#ffde3a3d"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pages"
+        android:text="300 pages"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="#10bcc9"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/title"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_below="@+id/pages"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>
